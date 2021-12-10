@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cons_back"
+    android:padding="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp">
+
+    <EditText
+        android:id="@+id/group"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:hint="Group name"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/_15sdp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        app:layout_constraintTop_toBottomOf="@id/group"
+        app:layout_constraintRight_toRightOf="@id/group"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/_15ssp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/close"
+        app:layout_constraintTop_toBottomOf="@id/group"
+        app:layout_constraintRight_toLeftOf="@id/save"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/_15ssp"
+        android:text="Close"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
